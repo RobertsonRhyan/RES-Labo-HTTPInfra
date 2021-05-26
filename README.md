@@ -31,3 +31,19 @@ The apache config files are located in `/usr/local/apache2/conf/httpd.conf`
 
 ## Step 2 : Dynamic HTTP server with express.js
 
+This step is about setting up a Docker Dynamic HTTP server with [express.js](https://expressjs.com/) that generates dynamic, random content and return a JSON payload to the client.
+
+You can also get a custom welcome message by changing the name at the end of the URI : http://localhost:8081/name/rhyan
+
+### Instructions
+1. Go into folder `Step2`
+2. Run `build-container.sh`
+![](figs/fig_02.png)
+3. Run `run-container.sh`
+
+You should now be able to access http://localhost:8081/ .
+
+### Configuration
+
+- You can changed the mapped port in run-container.sh
+- You can change the internal port of the container in /src/index.js

@@ -1,0 +1,15 @@
+{
+  "name": "res-step2",
+  "version": "1.0.0",
+  "description": "Dynamic HTTP server with express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rhyan Robertson",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.1.7",
+    "express": "^4.17.1"
+  }
+}
