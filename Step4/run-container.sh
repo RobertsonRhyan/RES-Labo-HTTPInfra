@@ -1,0 +1,1 @@
+docker run -d --name res-step4-static -v "$PWD"/www/:/usr/local/apache2/htdocs/ res/step1
