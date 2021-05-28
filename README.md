@@ -47,3 +47,15 @@ You should now be able to access http://localhost:8081/ .
 
 - You can changed the mapped port in run-container.sh
 - You can change the internal port of the container in /src/index.js
+
+## Step3 : Reverse proxy with apache (static configuration)
+
+In this step, we setup a Reverse Proxy
+
+
+![](figs/fig_03.JPEG)
+![](figs/fig_04.JPEG)
+![](figs/fig_05.PNG)
+
+
+
