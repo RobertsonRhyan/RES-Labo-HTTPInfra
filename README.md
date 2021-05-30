@@ -297,4 +297,5 @@ Simply run
 docker run -d -p 9000:9000 --name res-step9-portainer \
 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
 ```
+You can now access Portainer at http://localhost:9000
 
