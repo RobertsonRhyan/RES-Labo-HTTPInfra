@@ -14,11 +14,11 @@ For demo purposes, we'll use a simple Bootstrap theme ["Grayscale"](https://star
 1. Go into folder *Step1* : `Step1`.
 
 2. Run : `build-container.sh`. 
-```dockerfile
-docker build -t res/step1 .
-sudo chmod -R 775 www/
-```
-It will create the docker image and give users *read* rights to the `www` folder that contains the static web content. 
+   ```dockerfile
+   docker build -t res/step1 .
+   sudo chmod -R 775 www/
+   ```
+   It will create the docker image and give users *read* rights to the `www` folder that contains the static web content. 
    You might have to enter your password to grant the *read* rights to the `www` dir.
    ![](figs/fig_01.png)
 
