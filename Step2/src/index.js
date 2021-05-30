@@ -6,7 +6,7 @@ var app = express();
 var Chance = require('chance');
 var chance = new Chance();
 
-
+// root 
 app.get('/', function(req, res){
   res.send(generateAnimals());
 });
