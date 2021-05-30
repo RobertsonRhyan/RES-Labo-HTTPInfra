@@ -45,7 +45,9 @@ And you can get the list of Animals at http://localhost:8082 .
 ### Instructions
 1. Go into folder `Step2`
 2. Run `build-container.sh`
+
 ![](figs/fig_02.png)
+
 3. Run `run-container.sh`
 
 You should now be able to access http://localhost:8082/ .
