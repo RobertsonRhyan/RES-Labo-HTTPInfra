@@ -3,6 +3,8 @@
 **Author:** Rhyan Robertson
 **Info :** All of these steps were done using a Linux OS, but you can adapt them easily for Windows or Mac.</br>It's recommended to follow the steps in a the correct sequence.
 
+I've add a DNS A record mapping "demo.res.ch" to my computers IP. You could also change the hosts file on your PC.
+
 **Prerequisite :** You need a running Docker Engine, if it's not your case, you can follow this [guide](https://docs.docker.com/engine/install/ubuntu/).
 
 ## Step 1 : Static HTTP server with apache httpd
@@ -278,4 +280,21 @@ RUN a2ensite 000-* 001-*
 2. Kill the RP from previous step : `rest-step3-rp`
 3. Build the dynamic RP by running : `build-container.sh`
 4. Add static and dynamic server IPs to `run-conatiner.sh` and run it.
+
+## Step 6 : Load balancing: multiple server nodes
+
+Didn't have time to debug
+
+
+
+## Step 9 : Management UI
+
+I chose Portainer because I already use it at work and at home.
+
+Simply run 
+
+```sh
+docker run -d -p 9000:9000 --name res-step9-portainer \
+-v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+```
 

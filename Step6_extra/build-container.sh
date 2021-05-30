@@ -1,0 +1,1 @@
+docker build -t res/step6-rp .
